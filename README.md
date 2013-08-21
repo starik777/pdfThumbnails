@@ -10,9 +10,12 @@ Requires:
 - python 2.7
 - pip install pdfrw
 
+Usage:
+------
+
 **help:**        pdfThumbnails.py
 
-**usage:**       pdfThumbnails.py -i toCombine.pdf [-o out_pdf.pdf] [-x 5] [-y 5] [-g 0]
+**usage:**       pdfThumbnails.py -i toCombine.pdf [-o out_pdf.pdf] [-x 5] [-y 5] [-g 0.01]
 
 **test mode:**   pdfThumbnails.py -i toCombine.pdf -t
 
