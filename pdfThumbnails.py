@@ -32,7 +32,7 @@ def getPages(allpages, x, y, gap):
 
     line = y
     for index, page in enumerate(pages):
-        
+
         width = (index % x) * width_max / x
         if not width:
             line = line - 1
@@ -55,7 +55,7 @@ def getPages(allpages, x, y, gap):
     return PdfDict(
         Type = PdfName.Page,
         Contents = PdfDict(stream=''.join(stream)),
-        MediaBox = PdfArray([0, 0, width_max, height_max]),
+        MediaBox = PdfArray([-1000*gap, -1000*gap, width_max, height_max]),
         Resources = PdfDict(XObject = xobjdict),
     )
 
